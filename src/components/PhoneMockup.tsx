@@ -10,12 +10,7 @@ const screens = [
 ];
 
 export default function PhoneMockup({ scrollYProgress }: { scrollYProgress: MotionValue<number> }) {
-  // 4 screens across 4 panels
-  const opacity1 = useTransform(scrollYProgress, [0, 0.2, 0.28], [1, 1, 0]);
-  const opacity2 = useTransform(scrollYProgress, [0.2, 0.28, 0.48, 0.53], [0, 1, 1, 0]);
-  const opacity3 = useTransform(scrollYProgress, [0.48, 0.53, 0.73, 0.78], [0, 1, 1, 0]);
-  const opacity4 = useTransform(scrollYProgress, [0.73, 0.78, 1], [0, 1, 1]);
-  const opacities = [opacity1, opacity2, opacity3, opacity4];
+  // Screens slide horizontally based on scrollYProgress
 
   const yParallax = useTransform(scrollYProgress, [0, 1], [0, -30]);
   const rotateY = useTransform(scrollYProgress, [0, 0.5, 1], [-6, -10, -14]);
