@@ -19,7 +19,7 @@ const config: Config = {
         card: '#F7F7F7',
       },
       fontFamily: {
-        sans: ['var(--font-syne)', 'sans-serif'],
+        sans: ['var(--font-syncopate)', 'sans-serif'],
         mono: ['var(--font-jetbrains-mono)', 'JetBrains Mono', 'monospace'],
       },
       fontSize: {

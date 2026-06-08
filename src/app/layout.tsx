@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Syne, JetBrains_Mono } from "next/font/google";
+import { Syncopate, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import LenisInit from "@/components/LenisInit";
 import CustomCursor from "@/components/CustomCursor";
 import Topbar from "@/components/Topbar";
 
-const syne = Syne({
+const syncopate = Syncopate({
   subsets: ["latin"],
-  weight: ["400", "700", "800"],
-  variable: "--font-syne",
+  weight: ["400", "700"],
+  variable: "--font-syncopate",
 });
 
 const jetbrainsMono = JetBrains_Mono({
@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${syne.variable} ${jetbrainsMono.variable} antialiased font-sans bg-bg text-black selection:bg-blue selection:text-white`}>
+      <body className={`${syncopate.variable} ${jetbrainsMono.variable} antialiased font-sans bg-bg text-black selection:bg-blue selection:text-white`}>
         <LenisInit />
         <CustomCursor />
         <Topbar />
