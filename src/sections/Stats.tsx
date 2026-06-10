@@ -31,11 +31,8 @@ const cardVariants = {
 
 export default function Stats() {
   return (
-    <section className="w-screen h-screen flex-shrink-0 flex items-center px-6 md:px-16 bg-black text-white">
-      <div className="w-full">
-        <SectionLabel text="Quelques chiffres" className="text-white" />
-
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 max-w-[1100px] mx-auto">
+    <section className="w-full py-24 md:py-32 px-6 md:px-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 max-w-[1100px] mx-auto">
         {cards.map((card, i) => (
           <motion.div
             key={card.label}
