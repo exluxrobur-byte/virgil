@@ -25,6 +25,24 @@ export default function Intelligence() {
           />
         </div>
 
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-[13px] md:text-body text-muted mt-4 md:mt-8 max-w-[580px] leading-relaxed"
+        >
+          Le moteur score l&apos;engagement en continu et route l&apos;interaction suivante en cons&eacute;quence.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.35 }}
+          className="text-[13px] md:text-body text-muted mt-2 md:mt-4 max-w-[580px] leading-relaxed"
+        >
+          Les conservateurs voient tout : quelles &oelig;uvres ont captiv&eacute;, o&ugrave; les visiteurs ont d&eacute;croch&eacute;.
         </motion.p>
 
         {/* Tags */}
