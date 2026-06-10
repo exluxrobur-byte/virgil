@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import LenisInit from "@/components/LenisInit";
 import CustomCursor from "@/components/CustomCursor";
 import Topbar from "@/components/Topbar";
 
@@ -33,9 +32,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html lang="fr" className="snap-y snap-mandatory scroll-smooth">
       <body className={`${syne.variable} ${jetbrainsMono.variable} antialiased font-sans bg-bg text-black selection:bg-blue selection:text-white`}>
-        <LenisInit />
         <CustomCursor />
         <Topbar />
         {children}

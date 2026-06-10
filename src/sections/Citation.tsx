@@ -5,7 +5,7 @@ import Ticker from "@/components/Ticker";
 
 export default function Citation() {
   return (
-    <section className="w-full py-24 md:py-32 flex flex-col items-center justify-center">
+    <section className="w-full py-24 md:py-32 flex flex-col items-center justify-center snap-start">
       {/* Ticker */}
       <div className="w-full mb-12 md:mb-16 text-blue">
         <Ticker

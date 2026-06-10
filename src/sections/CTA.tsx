@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function CTA() {
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-center px-6 py-24 md:py-32">
+    <section className="w-full min-h-screen flex flex-col items-center justify-center px-6 py-24 md:py-32 snap-start">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

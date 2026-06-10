@@ -31,7 +31,7 @@ const cardVariants = {
 
 export default function Stats() {
   return (
-    <section className="w-full py-24 md:py-32 px-6 md:px-16">
+    <section className="w-full py-24 md:py-32 px-6 md:px-16 snap-start">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 max-w-[1100px] mx-auto">
         {cards.map((card, i) => (
           <motion.div

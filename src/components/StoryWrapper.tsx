@@ -16,6 +16,14 @@ export default function StoryWrapper({ children }: { children: React.ReactNode }
 
   return (
     <section ref={containerRef} className="relative h-[400vh] bg-bg w-full">
+      {/* Invisible Snap Points */}
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+        <div className="h-screen w-full snap-start" />
+        <div className="h-screen w-full snap-start" />
+        <div className="h-screen w-full snap-start" />
+        <div className="h-screen w-full snap-start" />
+      </div>
+
       <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center">
         
         {/* Horizontal Sliding Content */}

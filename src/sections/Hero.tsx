@@ -5,7 +5,7 @@ import AnimatedText from "@/components/AnimatedText";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen flex-shrink-0 flex flex-col items-center justify-center px-6 pt-32 pb-24 overflow-x-hidden">
+    <section className="relative w-full min-h-screen flex-shrink-0 flex flex-col items-center justify-center px-6 pt-32 pb-24 overflow-x-hidden snap-start">
       {/* Date label */}
       <motion.p
         initial={{ opacity: 0, y: 12 }}
