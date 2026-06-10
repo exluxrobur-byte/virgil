@@ -6,8 +6,8 @@ import SectionLabel from "@/components/SectionLabel";
 
 export default function Solution() {
   return (
-    <section className="w-screen h-screen flex-shrink-0 flex items-center px-16">
-      <div className="w-[60%] max-w-[680px]">
+    <section className="w-screen h-screen flex-shrink-0 flex items-center px-6 md:px-16">
+      <div className="w-full md:w-[60%] max-w-[680px]">
         <SectionLabel text="La solution" />
 
         <div className="mt-4">
@@ -19,7 +19,7 @@ export default function Solution() {
         </div>
 
         {/* Info boxes */}
-        <div className="mt-10 grid grid-cols-2 gap-4">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +52,7 @@ export default function Solution() {
         </div>
 
         {/* Two columns — What Virgil is / isn't */}
-        <div className="mt-10 grid grid-cols-2 gap-8">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}

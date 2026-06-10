@@ -14,12 +14,12 @@ export default function Topbar() {
       <span className="font-sans font-bold text-sm text-black">Virgil</span>
 
       {/* Center — Tagline */}
-      <span className="font-mono text-[9px] text-muted tracking-widest uppercase">
+      <span className="hidden md:block font-mono text-[9px] text-muted tracking-widest uppercase">
         Votre guide &agrave; travers la culture
       </span>
 
       {/* Right — Badge */}
-      <span className="font-mono text-[9px] text-blue tracking-wider uppercase">
+      <span className="font-mono text-[9px] text-blue tracking-wider uppercase text-right leading-tight max-w-[120px] md:max-w-none">
         MCI Innovation Award 2026
       </span>
     </motion.nav>

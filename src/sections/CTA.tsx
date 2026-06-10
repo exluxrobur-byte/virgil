@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function CTA() {
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-center px-6 py-32">
+    <section className="w-full min-h-screen flex flex-col items-center justify-center px-6 py-24 md:py-32">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ export default function CTA() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        className="font-mono text-[10px] text-muted tracking-wider uppercase mt-8"
+        className="font-mono text-[10px] text-muted tracking-wider uppercase mt-8 text-center"
       >
         Lancement pilote &mdash; dans les semaines suivant une d&eacute;cision de partenariat
       </motion.p>

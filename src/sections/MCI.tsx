@@ -6,9 +6,9 @@ import SectionLabel from "@/components/SectionLabel";
 
 export default function MCI() {
   return (
-    <section className="w-screen h-screen flex-shrink-0 flex items-center px-16">
-      <div className="w-[60%] max-w-[680px]">
-        <SectionLabel text="Pour les événements MCI ☾" />
+    <section className="w-screen h-screen flex-shrink-0 flex items-center px-6 md:px-16">
+      <div className="w-full md:w-[60%] max-w-[680px]">
+        <SectionLabel text="Pour les événements MCI" />
 
         <div className="mt-4">
           <AnimatedText

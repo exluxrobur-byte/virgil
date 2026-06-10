@@ -13,8 +13,8 @@ const tags = [
 
 export default function Intelligence() {
   return (
-    <section className="w-screen h-screen flex-shrink-0 flex items-center px-16">
-      <div className="w-[60%] max-w-[680px]">
+    <section className="w-screen h-screen flex-shrink-0 flex items-center px-6 md:px-16">
+      <div className="w-full md:w-[60%] max-w-[680px]">
         <SectionLabel text="L&apos;intelligence &#9678;" />
 
         <div className="mt-4">

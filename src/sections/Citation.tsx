@@ -5,9 +5,9 @@ import Ticker from "@/components/Ticker";
 
 export default function Citation() {
   return (
-    <section className="w-full py-32 flex flex-col items-center justify-center">
+    <section className="w-full py-24 md:py-32 flex flex-col items-center justify-center">
       {/* Ticker */}
-      <div className="w-full mb-16 text-blue">
+      <div className="w-full mb-12 md:mb-16 text-blue">
         <Ticker
           text="MCI perçoit une part de revenus sur chaque session activée · et obtient les données que la concurrence ne peut pas offrir"
           speed={30}
