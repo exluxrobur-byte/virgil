@@ -5,7 +5,7 @@ import AnimatedText from "@/components/AnimatedText";
 
 export default function Hero() {
   return (
-    <section className="relative w-screen h-screen flex-shrink-0 flex flex-col items-center justify-center px-6">
+    <section className="relative w-full min-h-screen flex-shrink-0 flex flex-col items-center justify-center px-6 pt-32 pb-24 overflow-x-hidden">
       {/* Date label */}
       <motion.p
         initial={{ opacity: 0, y: 12 }}
@@ -23,11 +23,29 @@ export default function Hero() {
         stagger={0.04}
       />
 
+      {/* Video Demo */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
+        className="w-full max-w-[300px] mt-10 mb-6 rounded-[36px] overflow-hidden border-[8px] border-[#f4f4f4] shadow-2xl bg-black/5"
+      >
+        <video 
+          src="/assets/olympic-concierge-demo.mp4"
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+          controls
+          className="w-full h-auto block"
+        />
+      </motion.div>
+
       {/* Blue divider */}
       <motion.div
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
-        transition={{ duration: 0.8, delay: 1.4, ease: "easeOut" }}
+        transition={{ duration: 0.8, delay: 1.6, ease: "easeOut" }}
         className="w-[200px] h-[2px] bg-blue mt-8 mb-8 origin-center"
       />
 
